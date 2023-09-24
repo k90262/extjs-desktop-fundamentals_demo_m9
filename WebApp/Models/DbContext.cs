@@ -8,6 +8,11 @@ namespace WebApp.Models
 {
     public class SeContext : DbContext
     {
+        public SeContext() : base("name=ContactMgrDBContext")
+        {
+            Database.SetInitializer<SeContext>(new SeDbInitializer());
+        }
+
         public DbSet<SessionModel> Sessions { get; set; } 
     }
 

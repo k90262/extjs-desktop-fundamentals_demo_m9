@@ -24,7 +24,10 @@ namespace WebApp
             );
 
             // Set the initializer here
-            Database.SetInitializer(new SeDbInitializer());
+            //Database.SetInitializer(new SeDbInitializer());
+            // Ref. 
+            // 1. https://stackoverflow.com/questions/30154283/entity-framework-database-connection-error
+            // 2. https://learn.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2015/data-tools/upgrade-dot-mdf-files?view=vs-2015&redirectedfrom=MSDN
 
             var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
             json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
