@@ -10,7 +10,7 @@ https://app.pluralsight.com/library/courses/extjs-desktop-fundamentals/exercise-
 
 1. Start a MS sql server via docker (with our default credential) for demo: 
     ```
-    docker pull mcr.microsoft.com/mssql/server 
+    docker pull mcr.microsoft.com/mssql/server@sha256:b94071acd4612bfe60a73e265097c2b6388d14d9d493db8f37cf4479a4337480 
     docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=1StrongPassword!' -p 1433:1433 -d mcr.microsoft.com/mssql/server
     ```
 2. Open IDE IntelliJ Rider, and run WebApp project. (Listen on port 5000 as default)
