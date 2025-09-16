@@ -82,6 +82,7 @@
   <ItemGroup>
     <Content Include="Content\ext-4.2.1.883\ext-all-dev.js" />
     <Content Include="data\Templates\CodeStarsSummitPresenterDetailPS.html" />
+    <Content Include="ExtJSFirst.html" />
     <Content Include="ExtJSGroup.html" />
     <Content Include="ExtJS.html" />
     <Content Include="ExtJSMVC_FINISH\app.js" />

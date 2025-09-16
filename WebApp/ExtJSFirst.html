@@ -1,0 +1,51 @@
+﻿<!--ExtJS Fundamentals Course-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <link href="/Content/ext-4.2.1.883/resources/css/ext-all-neptune.css" rel="stylesheet" />
+    <script src="/Content/ext-4.2.1.883/ext-all-debug.js"></script>
+
+    
+
+    <script type="text/javascript">
+
+        Ext.application({
+            name: 'MyApp',
+            launch: function () {
+                Ext.create('Ext.container.Viewport', {
+                    autoScroll: true,
+                    layout: 'fit',
+                    items: [
+                        {
+                            xtype: 'grid',
+                            columns: [{ text: 'Title', dataIndex: 'title', flex: 1 }, 
+                                { text: 'Approved', dataIndex: 'approved', xtype: 'checkcolumn' }],
+                            store: {
+                                autoLoad: true, autoSync: true,
+                                fields: ['title', { name: 'approved', type: 'boolean' }],
+                                proxy: { 
+                                    type: 'ajax', url: '/api/Session', 
+                                    reader: { type: 'json', root: 'data' }
+                                }
+                            }
+                        }
+                    ]
+                });
+            }
+        });
+
+
+    </script>
+
+
+</head>
+
+
+    <body>
+
+    </body>
+</html>
