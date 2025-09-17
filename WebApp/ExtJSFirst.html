@@ -28,7 +28,7 @@
                                 autoLoad: true, autoSync: true,
                                 fields: ['title', { name: 'approved', type: 'boolean' }],
                                 proxy: { 
-                                    type: 'ajax', url: '/api/Session', 
+                                    type: 'rest', url: '/api/Session', 
                                     reader: { type: 'json', root: 'data' }
                                 }
                             }
