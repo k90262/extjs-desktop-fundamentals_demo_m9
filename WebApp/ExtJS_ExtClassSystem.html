@@ -1,0 +1,50 @@
+﻿<!--ExtJS Fundamentals Course-->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="http://cdn.sencha.io/ext/gpl/4.2.1/resources/css/ext-all-neptune.css" rel="stylesheet" />
+    <script src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all.js"></script>
+
+    <script type="text/javascript">
+
+        Ext.define("MyApp.Session", {
+            config : {
+                title : "default",
+                description : "",
+                level : "beginner"
+            },
+            constructor : function(config) {
+                this.initConfig(config);
+            }
+        });
+
+        var sessionDefault = Ext.create("MyApp.Session", {
+        });
+        console.log(sessionDefault.getTitle()); // "default"
+
+        var session = Ext.create("MyApp.Session", {
+            title : "MyApp.Session Title",
+        });
+        console.log(session.getTitle()); // "MyApp.Session Title"
+        
+        session.setTitle("MyApp.Session Title Renew");
+        console.log(session.getTitle()); // "MyApp.Session Title Renew"
+
+    </script>
+
+
+</head>
+
+
+    <body>
+        
+        <div id="MyDivId">
+            
+        </div>
+
+    </body>
+</html>

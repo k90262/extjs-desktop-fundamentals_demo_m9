@@ -116,6 +116,7 @@
     <Content Include="ExtJSMVC_FINISH\resources\images\Normal.png" />
     <Content Include="ExtJSMVC_FINISH\resources\styles\app.css" />
     <Content Include="ExtJS_cdn.html" />
+    <Content Include="ExtJS_ExtClassSystem.html" />
     <Content Include="ExtJS_Model.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
